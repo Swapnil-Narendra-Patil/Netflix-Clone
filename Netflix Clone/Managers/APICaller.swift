@@ -2,7 +2,7 @@
 //  APICaller.swift
 //  Netflix Clone
 //
-//  Created by Amr Hossam on 08/12/2021.
+//  Created by Ratnesh Chimnani on 12/01/2023.
 //
 
 import Foundation
@@ -11,7 +11,7 @@ import Foundation
 struct Constants {
     static let API_KEY = "de915c2d5a62b52b9513e3c4ed3f8034"
     static let baseURL = "https://api.themoviedb.org"
-    static let YoutubeAPI_KEY = "AIzaSyDqX8axTGeNpXRiISTGL7Tya7fjKJDYi4g"
+    static let YoutubeAPI_KEY = "AIzaSyCTjlqak8QfabcpHI5xAejEcCEciORSRYY"
     static let YoutubeBaseURL = "https://youtube.googleapis.com/youtube/v3/search?"
 }
 
@@ -167,7 +167,6 @@ class APICaller {
     
     func getMovie(with query: String, completion: @escaping (Result<VideoElement, Error>) -> Void) {
         
-
         guard let query = query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else {return}
         guard let url = URL(string: "\(Constants.YoutubeBaseURL)q=\(query)&key=\(Constants.YoutubeAPI_KEY)") else {return}
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, _, error in

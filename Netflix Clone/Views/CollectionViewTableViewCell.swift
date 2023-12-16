@@ -2,7 +2,7 @@
 //  CollectionViewTableViewCell.swift
 //  Netflix Clone
 //
-//  Created by Amr Hossam on 21/11/2021.
+//  Created by Ratnesh Chimnani on 12/04/2023.
 //
 
 import UIKit
@@ -73,6 +73,9 @@ class CollectionViewTableViewCell: UITableViewCell {
 
 
 extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    
+    // Collection view is very similar to table view, it has cells and everything
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 

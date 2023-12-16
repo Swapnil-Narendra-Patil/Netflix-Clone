@@ -2,11 +2,13 @@
 //  TitleCollectionViewCell.swift
 //  Netflix Clone
 //
-//  Created by Amr Hossam on 16/12/2021.
+//  Created by Ratnesh Chimnani on 12/04/2023.
 //
 
 import UIKit
 import SDWebImage
+
+// This file is responsible for showing/setting images of movies/TVs in the Cells or Homepage
 
 class TitleCollectionViewCell: UICollectionViewCell {
     
@@ -34,7 +36,7 @@ class TitleCollectionViewCell: UICollectionViewCell {
         posterImageView.frame = contentView.bounds
     }
     
-    
+    // This function uses the SD web to set the image by constructing the base url and op of poster_path
     public func configure(with model: String) {
         
         guard let url = URL(string: "https://image.tmdb.org/t/p/w500/\(model)") else {

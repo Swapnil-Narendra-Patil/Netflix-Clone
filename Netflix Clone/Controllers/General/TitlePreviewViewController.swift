@@ -2,7 +2,7 @@
 //  TitlePreviewViewController.swift
 //  Netflix Clone
 //
-//  Created by Amr Hossam on 07/01/2022.
+//  Created by Ratnesh Chimnani on 12/08/2023.
 //
 
 import UIKit
