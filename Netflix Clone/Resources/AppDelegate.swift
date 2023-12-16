@@ -2,9 +2,8 @@
 //  AppDelegate.swift
 //  Netflix Clone
 //
-//  Created by Amr Hossam on 04/11/2021.
+//  Created by Ratnesh Chimnani on 12/04/2023
 //
-
 import UIKit
 import CoreData
 
